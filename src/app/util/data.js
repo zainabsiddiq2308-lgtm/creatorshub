@@ -8,7 +8,7 @@ export const data=[
         
         name:'Home',
         path:"/",
-        subname:['contact','about']
+       
     },
     
     {
@@ -28,7 +28,7 @@ export const data=[
 
         
         name:'Services',
-      
+      path:'services',
         arrow:<MdOutlineKeyboardArrowDown />
 
     }
@@ -66,27 +66,27 @@ export const data1=[
     {
         img:"/assets/product.png",
         name:"Product Design & Development ",
-        path:"/product-desigb",
+        path:"/productdesign",
         description:"Product design and development turns ideas into practical, user-friendly solutions that meet customer needs and drive market success."
         
     },
     {img:"/assets/custom.png",
         name:"Custom Software Development",
-        path:"/custom_software",
+        path:"/customsoftware",
         description:"Custom software development creates tailored  solutions designed to meet specific business needs with efficiency and scalability."
     },
       { img:"/assets/custom.png",
         name:" Quality Asuurance ",
-        path:"/quality-assurance",
+        path:"/qualityassurance",
         description:"Quality assurance ensures products and software meet the highest standards of performance, reliability, and user satisfaction."
     },
       {img:"/assets/staff.png",
         name:"Staff Agumentation",
-        path:"/staff-agumentation",
+        path:"/staff",
        description:" Staff augmentation provides skilled professionals on demand, helping businesses scale teams quickly and efficiently."
     },
     { img:"/assets/mobile.png",
-        name:"mobile App Development",
+        name:"mobileapp",
 path:"/mobile-app",
 description:"Mobile app development delivers intuitive, high-performing apps that enhance user experience and drive business growth."
     }

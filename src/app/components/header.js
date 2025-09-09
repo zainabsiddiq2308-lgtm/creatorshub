@@ -7,13 +7,17 @@ import { MdClose } from "react-icons/md";
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
+
 const Header = () => {
   const router = useRouter()
   const wrapperRef = useRef(null)
   const [open, setOpen] = useState(false)       // Services dropdown
   const [mobileOpen, setMobileOpen] = useState(false) // Mobile menu
   const [activeIndex, setActiveIndex] = useState(null)
-
+ function handle(path){
+  setOpen(false)
+  router.push(path)
+ }
   // Close dropdown when clicked outside
   useEffect(() => {
     function handleClickOutside(event) {
@@ -63,24 +67,7 @@ const Header = () => {
           </ul>
 
           {/* Dropdown for Services */}
-          {open && (
-            <div className="absolute top-16 left-20 bg-gray-900 text-white shadow-lg rounded-lg p-4 grid grid-cols-2 gap-4 w-[600px]">
-              {data1.map((e, i) => (
-                <Link
-                  key={i}
-                  href={e.path}
-                  className="flex items-start space-x-3 hover:text-yellow-400"
-                  onClick={() => setOpen(false)}
-                >
-                  <Image src={e.img} width={30} height={30} alt={e.name} />
-                  <div>
-                    <h4 className="font-semibold">{e.name}</h4>
-                    <p className="text-sm text-gray-400">{e.description}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          )}
+          
         </div>
 
         {/* Right section */}

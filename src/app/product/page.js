@@ -77,7 +77,8 @@ const Product = () => {
   return (
     <div className="w-full text-white bg-gradient-to-b from-black via-gray-900 to-black">
       {/* Hero Section */}
-      <div className="relative bg-[url('/assets/whyus-bg.jpg')] bg-cover bg-center h-[70vh] flex flex-col justify-center items-center text-center px-6">
+      <div className="relative bg-[url('/assets/whyus-bg.jpg')] bg-cover bg-center
+       h-[70vh] flex flex-col justify-center items-center text-center px-6">
         <motion.h1
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

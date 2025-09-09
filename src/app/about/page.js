@@ -99,7 +99,7 @@ const About = () => {
           transition={{ duration: 1 }}
           src="/assets/ceo.jpg"   // 👈 apni CEO ki image yahan dalna
           alt="CEO"
-          className="rounded-2xl shadow-lg w-full max-w-sm mx-auto object-cover"
+          className="rounded-2xl shadow-lg w-full max-w-sm mx-auto object-cover "
         />
 
         {/* CEO Content */}
@@ -125,7 +125,7 @@ const About = () => {
         </motion.div>
       </div>
 
-      {/* Team Section */}
+      {/* Team Section
       <div className="py-16 px-6 max-w-6xl mx-auto w-full">
         <h2 className="text-4xl font-semibold text-center mb-12">Meet Our Team</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -145,7 +145,7 @@ const About = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* CTA Section */}
       <div className="bg-pink-600 py-16 text-center">

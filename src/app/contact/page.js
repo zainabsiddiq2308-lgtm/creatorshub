@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import ContactForm from "../components/contactform";
 
 const Contact = () => {
   return (
@@ -45,7 +46,7 @@ const Contact = () => {
             we’ll get back to you as soon as possible.
           </p>
           <ul className="space-y-4 text-gray-300">
-            <li>📧 Email: support@crestor.com</li>
+            <li>📧 Email: thecrestor234@gmail.com</li>
             <li>📞 Phone: +92 300 1234567</li>
             <li>🌍 Available: Online Worldwide</li>
           </ul>
@@ -61,47 +62,7 @@ const Contact = () => {
           <h2 className="text-3xl font-semibold mb-8 text-center">
             Send Us a Message
           </h2>
-          <form className="space-y-6">
-            <div>
-              <label className="block text-gray-400 mb-2">Your Name</label>
-              <input
-                type="text"
-                placeholder="Enter your name"
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-400 mb-2">Your Email</label>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-400 mb-2">Your Phone</label>
-              <input
-                type="text"
-                placeholder="Enter your phone number"
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-400 mb-2">Message</label>
-              <textarea
-                rows="5"
-                placeholder="How can we help you?"
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
-              ></textarea>
-            </div>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full py-3 bg-pink-600 rounded-lg font-semibold hover:bg-pink-700 transition-all"
-            >
-              Send Message
-            </motion.button>
-          </form>
+          <div><ContactForm/></div>
         </motion.div>
       </div>
 
@@ -157,17 +118,17 @@ const Contact = () => {
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
           {[
             {
-              name: "Ayesha Khan",
+              name: "George Brown",
               feedback:
                 "Crestor helped me design my dream project. Amazing creativity!",
             },
             {
-              name: "Ali Raza",
+              name: "Jack Taylo",
               feedback:
                 "Quick responses and professional work. Highly recommended!",
             },
             {
-              name: "Sara Ahmed",
+              name: "Henry Thompson",
               feedback:
                 "I love working with their team, always on time and innovative.",
             },

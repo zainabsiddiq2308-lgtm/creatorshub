@@ -24,7 +24,7 @@ return(
 
 
       {data&&(
-          <motion.div className="overflow-hidden z-50  absolute top-20 left-44 " 
+          <motion.div className="overflow-hidden z-50  absolute top-20 left-44 " id="ab"
            >
                 <div className='flex flex-col  fixed  bg-gray-50 rounded-4xl' >
   <section className=" bg-gray-50 ">
