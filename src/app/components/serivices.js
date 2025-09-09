@@ -1,0 +1,45 @@
+import React from "react";
+import { data1 } from "../util/data";
+import Image from "next/image";
+
+const Services = () => {
+  return (
+    <div className="w-full px-4 py-8" id="card ">
+       <h1 className="text-4xl font-bold text-center text-white  pb-6 lg:pb-10 ">Our Services</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  ">
+    <div>
+      <h3  className="lg:pt-20 text-xl font-bold text-white">"Innovative solutions, tailored to grow your business."</h3>
+         <p className="pt-2 text-white">"We offer a wide range of services including 
+        product design, custom software development, quality
+         assurance, staff augmentation, and mobile app development 
+         — helping businesses grow with innovative and reliable solutions."
+
+       </p>
+    </div>
+        {data1.map((e, i) => (
+          <div
+            key={i}
+            className="bg-white shadow-md rounded-xl p-4 flex flex-col
+            hover:scale-90 items-center text-center hover:shadow-lg transition-shadow duration-300"
+          >
+          
+            <div className="relative w-full h-48 md:h-56 lg:h-64">
+              <Image
+                src={e.img}
+                alt={e.name}
+                fill
+                className="object-contain rounded-md "
+              />
+            </div>
+            <h4 className="mt-4 text-lg font-semibold text-gray-800">
+              {e.name}
+            </h4>
+            <p className="mt-2 text-sm text-gray-600">{e.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Services;
