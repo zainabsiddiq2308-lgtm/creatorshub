@@ -3,30 +3,45 @@ import { GrInstagram } from "react-icons/gr";
 import Link from 'next/link';
 import { IoLogoLinkedin } from "react-icons/io";
 import { motion } from 'framer-motion';
+
 const Nav = () => {
   return (
-    <div className='mt-20  bg-gray-800 '> 
-     <motion.div className='flex space-x-35 text-white h-8 pr-5 pl-13' initial={{x:0}} >
-            <div className=' flex space-x-5 justify-center items-center'>
-             
-                <div className='text-xl'><Link href="https://www.linkedin.com/company/the-creators-with-art/">
-                <IoLogoLinkedin />
-                </Link></div>
-                <div><Link href="https://www.instagram.com/thecreatorswithart__?igsh=MWF6YnE4OWN6ejY5Mw==">
-                 <GrInstagram />
-                </Link></div>
-               
-            </div>
-            {/* end */}
-            <div className='text-white flex gap-x-5'><p>the creator with art</p>
-            <div><Link href='tel:+92 300 1234567'>📞+ 92 300 1234567</Link></div>
-             <div><Link href='mailto:thecreatorwithart234@gmail.com'> 📩thecreatorwith234@gmail.com</Link></div>
-            <div>🕛open Monday-Friday 24/7</div>
-            </div>
+    <div className="mt-20 bg-gray-800 text-white">
+      <motion.div 
+        className="flex flex-col md:flex-row md:justify-between md:items-center px-6 py-4 gap-4"
+        initial={{ x: 0 }}
+      >
+        {/* Social Icons */}
+        <div className="flex space-x-5 justify-center items-center">
+          <Link 
+            href="https://www.linkedin.com/company/the-creators-with-art/" 
+            target="_blank"
+            className="text-2xl hover:text-blue-400"
+          >
+            <IoLogoLinkedin />
+          </Link>
+          <Link 
+            href="https://www.instagram.com/thecreatorswithart__?igsh=MWF6YnE4OWN6ejY5Mw==" 
+            target="_blank"
+            className="text-2xl hover:text-pink-400"
+          >
+            <GrInstagram />
+          </Link>
+        </div>
 
-
-            </motion.div>
-            </div>
+        {/* Contact Info */}
+        <div className="flex flex-col md:flex-row md:items-center gap-3 text-sm md:text-base text-center md:text-left">
+          <p className="font-semibold">The Creator With Art</p>
+          <Link href="tel:+923001234567" className="hover:underline">
+            📞 +92 300 1234567
+          </Link>
+          <Link href="mailto:thecreatorwithart234@gmail.com" className="hover:underline">
+            📩 thecreatorwith234@gmail.com
+          </Link>
+          <span>🕛 Open Monday–Friday 24/7</span>
+        </div>
+      </motion.div>
+    </div>
   )
 }
 
