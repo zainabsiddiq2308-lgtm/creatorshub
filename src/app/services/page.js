@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-
+import { motion } from "framer-motion";
 const Services = () => {
   const [active, setActive] = useState(1);
   const router = useRouter();
@@ -11,7 +11,8 @@ const Services = () => {
     { name: "Custom Software Development", path: "customsoftware", id: 2 },
     { name: "Quality Assurance", path: "qualityassurance", id: 3 },
     { name: "Staff Augmentation", path: "staff", id: 4 },
-    { name: "Mobile App Development", path: "mobileapp", id: 5 }
+    { name: "Mobile App Development", path: "mobileapp", id: 5 },
+    { name: "Website Development", path: "website", id: 6 }
   ];
 
   const card = [
@@ -37,13 +38,20 @@ const Services = () => {
       id: 4,
       name: "Staff Agumentation",
       details:
-        "We ensure your software is reliable, bug-free, and delivers a seamless user experience. Through rigorous testing, automation, and quality checks, we guarantee performance, security, and scalability before launch."
+       "Staff augmentation is a flexible outsourcing strategy that allows businesses to hire skilled professionals on-demand to fill talent gaps in their teams. With this model, companies can scale their workforce quickly without the long-term costs of full-time hiring. Whether you need developers, designers, project managers, or other IT experts, staff augmentation ensures you get the right talent at the right time. Our approach helps businesses increase efficiency, reduce overhead, and accelerate project delivery while maintaining full control over their processes."
     },
       {
       id: 5,
       name: "Mobile App development",
       details:
-        "We ensure your software is reliable, bug-free, and delivers a seamless user experience. Through rigorous testing, automation, and quality checks, we guarantee performance, security, and scalability before launch."
+       "App development is the process of creating mobile and web applications that are fast, secure, and user-friendly. From idea to deployment, our focus is on building apps that solve real-world problems and enhance user experiences. We design intuitive interfaces, integrate modern features, and ensure seamless performance across iOS, Android, and web platforms. Whether it’s an e-commerce app, a business solution, or a custom product, we develop scalable applications tailored to your goals."
+    },
+    ,
+      {
+      id: 6,
+      name: "webite development",
+      details:
+        "Website development involves designing, creating, and maintaining websites. It covers everything from layout and user interface to functionality and performance, ensuring a responsive, fast, and user-friendly online presence for businesses or individuals."
     },
     
     
@@ -54,16 +62,18 @@ const Services = () => {
       {/* Hero Section */}
       <div>
         <div className="mb-20 flex flex-col w-full relative h-[70vh]
-         bg-[url('/assets/services.png')] bg-cover bg-no-repeat opacity-10"></div>
-        <div className="absolute top-40 flex flex-col justify-center 
-        items-center  left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <h1 className="font-bold text-4xl text-yellow-400">Our Services</h1>
+         bg-[url('/assets/services.png')] bg-cover bg-no-repeat opacity-10" ></div>
+        <motion.div className="absolute top-40 flex flex-col justify-center 
+        items-center  left-1/2 -translate-x-1/2 -translate-y-1/2" initial={{y:0}}
+          animate={{y:50}} transition={{duration:0.8}}>
+          <h1 className="font-bold text-5xl text-yellow-400"  >Our Services</h1>
           <div className="font-semibold">
             Transforming Ideas Into Powerful Digital Solutions
           </div>
-        </div>
+        </motion.div>
       </div>
-
+      {/* end */}
+<div className="w-full mb-10"><h1 className="text-center text-3xl font-bold text-white">Your Needs, Our Expertise – Choose a Service</h1></div>
       {/* Services List */}
       <div className="mb-40 flex flex-col md:flex-row gap-10">
         <div className="flex flex-col gap-y-4 pl-4">

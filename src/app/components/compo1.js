@@ -11,7 +11,7 @@ const Compo1 = () => {
 
         <div className="flex flex-col items-center w-full sm:w-3/4 lg:w-2/3 gap-4 sm:gap-5 text-center">
           <p className="text-base sm:text-lg md:text-xl text-white">
-            NexStep is an analytics platform that helps product, marketing, 
+            The creator is an analytics platform that helps product, marketing, 
             and customer success teams craft exceptional digital experiences 
             that convert and retain users.
           </p>

@@ -9,7 +9,7 @@ const MobileApp = () => {
       {/* Hero Image Section */}
       <div className="relative w-full max-w-4xl h-[400px] rounded-2xl overflow-hidden shadow-2xl">
         <Image
-          src="/assets/mobileapp.png"
+          src="/assets/mobile.png"
           alt="Mobile App Development"
           fill
           className="object-cover"

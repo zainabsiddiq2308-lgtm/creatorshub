@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-
+import { useRouter } from "next/navigation";
 const About = () => {
+  const route=useRouter();
   return (
     <div className="w-full text-white bg-gradient-to-b from-black 
      via-gray-900 to-black overflow-x-hidden">
@@ -28,8 +29,7 @@ const About = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ delay: 0.5, duration: 1 }}
-    className="relative max-w-3xl text-lg leading-7 z-10"
-  >
+    className="relative max-w-3xl text-lg leading-7 z-10">
     At Crestor – The Art Company, art is more than just a visual experience – 
     it is a form of expression that connects people, cultures, and generations.
   </motion.p>
@@ -38,7 +38,8 @@ const About = () => {
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.95 }}
     className="relative mt-6 px-6 py-2 bg-pink-600 rounded-full shadow-lg hover:bg-pink-700 transition-all z-10"
-  >
+ onClick={(e)=>route.push("contact")}
+ >
     Contact Us
   </motion.button>
 </div>
@@ -161,7 +162,8 @@ const About = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           className="px-6 py-3 bg-black rounded-full text-white font-semibold shadow-lg hover:bg-gray-900 transition-all"
-        >
+     onClick={(e)=>route.push("/contact")}
+     >
           Get in Touch
         </motion.button>
       </div>

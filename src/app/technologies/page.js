@@ -1,21 +1,22 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-
+import { useRouter } from "next/navigation";
 const Technologies = () => {
+  const route=useRouter();
   return (
     <div className="w-full text-white bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
       {/* ---------------- Hero Section ---------------- */}
       <div
         className="relative w-full h-[70vh] bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center text-center px-6"
-        style={{ backgroundImage: "url('/assets/tech-hero.jpg')" }}
+        style={{ backgroundImage: "url('/assets/technology.png')" }}
       >
         <div className="absolute inset-0 bg-black/70"></div>
         <motion.h1
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative text-6xl font-extrabold z-10"
+          className="relative text-5xl font-extrabold z-10"
         >
           Our Technologies
         </motion.h1>
@@ -173,7 +174,8 @@ const Technologies = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="px-8 py-3 bg-black rounded-full text-white font-semibold shadow-lg hover:bg-gray-900 transition-all"
-        >
+       onClick={(e)=>route.push("/contact")}
+       >
           Get Started
         </motion.button>
       </div>

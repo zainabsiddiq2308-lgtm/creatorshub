@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-
+import { useRouter } from "next/navigation"
 const problems = [
   {
     problem: "Generic & Copy-Paste Designs",
@@ -73,11 +73,12 @@ const testimonials = [
   },
 ]
 
-const Product = () => {
+const Why = () => {
+   const route=useRouter();
   return (
     <div className="w-full text-white bg-gradient-to-b from-black via-gray-900 to-black">
       {/* Hero Section */}
-      <div className="relative bg-[url('/assets/whyus-bg.jpg')] bg-cover bg-center
+      <div className="relative bg-[url('/assets/why.png')] bg-cover bg-center 
        h-[70vh] flex flex-col justify-center items-center text-center px-6">
         <motion.h1
           initial={{ y: -100, opacity: 0 }}
@@ -182,7 +183,8 @@ const Product = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           className="px-8 py-3 bg-black rounded-full text-white font-semibold shadow-lg hover:bg-gray-900 transition-all"
-        >
+       
+       onClick={(e)=>route.push("/contact")}>
           Contact Us
         </motion.button>
       </div>
@@ -190,4 +192,4 @@ const Product = () => {
   )
 }
 
-export default Product
+export default Why;

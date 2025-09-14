@@ -2,14 +2,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ContactForm from "../components/contactform";
+import Link from "next/link";
 
 const Contact = () => {
   return (
     <div className="w-full text-white bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
       {/* ---------------- Hero Section ---------------- */}
       <div
-        className="relative w-full h-[70vh] bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center text-center px-6"
-        style={{ backgroundImage: "url('/assets/contact-hero.jpg')" }}
+        className="relative w-full h-[70vh] bg-center bg-cover
+         bg-no-repeat flex flex-col justify-center items-center text-center px-6"
+        style={{ backgroundImage: "url('/assets/contact.png')" }}
       >
         <div className="absolute inset-0 bg-black/70"></div>
         <motion.h1
@@ -48,6 +50,7 @@ const Contact = () => {
           <ul className="space-y-4 text-gray-300">
             <li>📧 Email: thecrestor234@gmail.com</li>
             <li>📞 Phone: +92 300 1234567</li>
+       
             <li>🌍 Available: Online Worldwide</li>
           </ul>
         </motion.div>
@@ -200,10 +203,10 @@ const Contact = () => {
           Follow us on social media for updates and news.
         </p>
         <div className="flex justify-center space-x-6">
-          <a href="#" className="text-white hover:text-black transition">
-            🌐 Facebook
+          <a href="https://www.linkedin.com/company/the-creators-with-art/" className="text-white hover:text-black transition">
+            🌐 Linkdln
           </a>
-          <a href="#" className="text-white hover:text-black transition">
+          <a href="https://www.instagram.com/thecreatorswithart__?igsh=MWF6YnE4OWN6ejY5Mw==" className="text-white hover:text-black transition">
             📸 Instagram
           </a>
           <a href="#" className="text-white hover:text-black transition">

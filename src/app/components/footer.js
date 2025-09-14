@@ -73,27 +73,27 @@ const Footer = () => {
           </h4>
           <ul className="space-y-3">
             <li>
-              <Link href="#" className="hover:text-amber-500 transition">
+              <Link href="/productdesign" className="hover:text-amber-500 transition">
                 Product Design & Development
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-amber-500 transition">
+              <Link href="/customsoftware" className="hover:text-amber-500 transition">
                 Custom Software Development
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-amber-500 transition">
+              <Link href="/qualityassurance" className="hover:text-amber-500 transition">
                 Quality Assurance
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-amber-500 transition">
+              <Link href="/mobileapp" className="hover:text-amber-500 transition">
                 Mobile App Development
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-amber-500 transition">
+              <Link href="/services" className="hover:text-amber-500 transition">
                 Website Development
               </Link>
             </li>

@@ -7,7 +7,6 @@ import { MdClose } from "react-icons/md";
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
-
 const Header = () => {
   const router = useRouter()
   const wrapperRef = useRef(null)
@@ -73,7 +72,8 @@ const Header = () => {
         {/* Right section */}
         <div className="hidden lg:flex">
           <button
-            className="bg-blue-950 rounded-2xl px-6 py-2 border-2 border-gray-400 text-white font-bold hover:bg-blue-800"
+            className="bg-yellow-500 rounded-xl
+             px-7 py-2 border-2 border-gray-400 text-black font-bold hover:bg-yellow-400 transition-all"
             onClick={() => router.push("/contact")}
           >
             Contact us
@@ -123,7 +123,8 @@ const Header = () => {
             </div>
           ))}
           <button
-            className="bg-blue-950 rounded-2xl px-6 py-2 border-2 border-gray-400 text-white font-bold hover:bg-blue-800"
+            className="bg-yellow-300 rounded-2xl px-6 py-2 border-2 text-black
+             border-gray-400  font-bold hover:bg-blue-800"
             onClick={() => {
               router.push("/contact")
               setMobileOpen(false)
@@ -133,6 +134,7 @@ const Header = () => {
           </button>
         </div>
       )}
+    
     </div>
   )
 }

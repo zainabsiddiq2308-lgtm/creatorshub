@@ -2,8 +2,45 @@ import Link from 'next/link'
 import React from 'react'
 import { FaPhone } from "react-icons/fa6";
 import { CgMail } from "react-icons/cg";
-
+import { FaWhatsapp } from "react-icons/fa6";
+import { useState } from 'react';
 const  Contact=() => {
+   const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [message, setMessage] = useState("");
+    const [status, setStatus] = useState("");
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setStatus("Sending...");
+  
+      try {
+        const res = await fetch("http://localhost:3000/api/data", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, phone, message }),
+        });
+  
+        if (!res.ok) throw new Error(`Server error: ${res.status}`);
+  
+        const data = await res.json();
+  
+        if (data.success) {
+          setStatus("Message sent successfully!");
+          // Reset form fields
+          setName("");
+          setEmail("");
+          setPhone("");
+          setMessage("");
+        } else {
+          setStatus(data.error || "Failed to send message.");
+        }
+      } catch (err) {
+        console.error("Form submit error:", err);
+        setStatus("Failed to send message.");
+      }
+    };
   return (
     <div  className=' flex  gap-x-8  flex-col lg:flex-row bg-white p-2 lg:pt-15'>
 
@@ -18,8 +55,11 @@ const  Contact=() => {
  <div className='mt-3'>
    <div className='flex items-center gap-x-3 font-bold '>
     <div className='text-xl'><FaPhone /> </div>
-  <Link href="tel:+436506896710" className='underline'>+436506896710</Link></div>
-
+  <Link href="tel:+436506896710" className='underline'>03160486234</Link></div>
+<div  className=' flex items-center gap-x-3  font-bold underline'>
+  <div className='text-xl'><FaWhatsapp /></div>
+<Link href="https://wa.me/+436506896710">+436506896710</Link>
+</div>
 <div className='flex items-center'><Link href="mailto:thecreators234@gmail.com" 
 className='underline font-bold'>thecreators234@gmail.com</Link></div>
 </div>
@@ -63,31 +103,36 @@ className='underline font-bold'>thecreators234@gmail.com</Link></div>
         {/* Form */}
         <form className="bg-white p-8 rounded-2xl shadow-lg space-y-5 text-left">
           <input
-            type="text"
+            type="text" value={name} 
+         onChange={((e)=>(setName(e.target.value)))}
             placeholder="Your Name"
             className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
           />
           <input
-            type="email"
+            type="email" value={email} onChange={((e)=>(setEmail(e.target.value)))}
             placeholder="Your Email"
             className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
           />
-          <input
+          <input value={phone} onChange={((e)=>{setPhone(e.target.value)})}
             type="tel"
             placeholder="Your Phone Number"
             className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
           />
-          <textarea
-            rows="4"
-            placeholder="How can we help you?"
-            className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-          ></textarea>
-          <button
+       <textarea
+  rows="4"
+  value={message}
+  onChange={(e) => setMessage(e.target.value)}
+  placeholder="How can we help you?"
+  className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+></textarea>
+
+          <button onSubmit={handleSubmit}
             type="submit"
             className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
           >
             Submit
           </button>
+         <div className='text-black'> {status}</div>
         </form>
       </div>
     </section>

@@ -22,7 +22,7 @@ export const data=[
 
         
         name:'Why us',
-        path:"/product"
+        path:"/why"
     },
      {
 
@@ -87,8 +87,13 @@ export const data1=[
     },
     { img:"/assets/mobile.png",
         name:"mobileapp",
-path:"/mobile-app",
+path:"/mobileapp",
 description:"Mobile app development delivers intuitive, high-performing apps that enhance user experience and drive business growth."
+    },
+       { img:"/assets/website.png",
+        name:"Website Development",
+path:"/website",
+description:"Website development involves designing, creating, and maintaining websites. It covers everything from layout and user interface to functionality and performance, ensuring a responsive, fast, and user-friendly online presence for businesses or individuals"
     }
     
 ]

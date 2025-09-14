@@ -3,13 +3,13 @@ import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 const Testimonial = () => {
 
     const data=[
-        {  Name: "Sarah Khan",
+        {  Name: "Alexander Müller",
           Position:" CEO, TechNova Solutions",
           Feedback: "The team delivered our project on time with outstanding quality. Their SDLC approach kept everything transparent and efficient."
  ,
 rate: < FaStar/>},
  {
-    Name:" Ali Raza",
+    Name:"Sofia Rossi",
 Position: "Product Manager, BrightApps",
 Feedback: "Communication was smooth, and they truly understood our requirements. The end product exceeded our expectations."
 
@@ -22,18 +22,18 @@ Feedback: "What impressed me most was their attention to detail and commitment t
 
 ,
 rate: < FaStar/>},
-{ Name: "Hamza Ahmed",
+{ Name: "George Brown",
 Position: "CTO, SmartBiz Solutions",
 Feedback: "They followed a professional process from design to deployment. We are extremely satisfied with the results."
 
 ,
 rate: < FaStar/>},
-{Name: "Maria Rodriguez",
+{Name: "Rodriguez",
 Position: "Marketing Director, VisionWorks",
 Feedback: "Our mobile app was delivered flawlessly. The team ensured scalability and top performance."
 ,
 rate: < FaStar/>},
-{Name:" Usman Tariq",
+{Name:" Henry Thompson",
 Position: "Operations Head, CloudTech Pvt Ltd",
 Feedback: "Their agile method made it easy to adapt changes quickly without delaying the project timeline."
 ,
@@ -47,7 +47,7 @@ Feedback: "They have a deep technical understanding. Testing and quality assuran
 rate: < FaStar/>}
 ,
 {
-    Name: "Ahmed Bilal",
+    Name: "Jack Taylo",
 Position: "Co-Founder, GreenCart",
 Feedback: "Deployment was smooth, and the support after launch has been fantastic. Truly a reliable partner."
 ,

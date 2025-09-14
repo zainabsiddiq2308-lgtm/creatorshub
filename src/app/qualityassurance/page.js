@@ -9,7 +9,7 @@ const QualityAssurance = () => {
       {/* Hero Image Section */}
       <div className="relative w-full max-w-4xl h-[400px] rounded-2xl overflow-hidden shadow-2xl">
         <Image
-          src="/assets/qualityassurance.png"
+          src="/assets/custom.png"
           alt="Quality Assurance"
           fill
           className="object-cover"

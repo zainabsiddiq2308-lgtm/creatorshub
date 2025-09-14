@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 const Compo2 = () => {
+  const route=useRouter()
   return (
     <div className="relative w-screen h-screen overflow-hidden">
       {/* Background Video */}
@@ -34,10 +35,12 @@ const Compo2 = () => {
 
           {/* Buttons */}
           <div className="flex gap-4 mt-6 justify-center md:justify-start">
-            <button className="rounded-md px-6 py-3 bg-yellow-500 text-black font-medium hover:bg-yellow-400 transition">
+            <button className="rounded-md px-6 py-3 bg-yellow-500 text-black font-medium hover:bg-yellow-400 transition"
+            onClick={(()=>(route.push("/contact")))}>
               Get Started
             </button>
-            <button className="border-2 border-amber-500 px-6 py-3 rounded-full text-white hover:bg-amber-500 hover:text-black transition">
+            <button className="border-2 border-amber-500 px-6 py-3 rounded-full text-white
+             hover:bg-amber-500 hover:text-black transition"  onClick={(()=>(route.push("/services")))}>
               Learn More
             </button>
           </div>
