@@ -3,13 +3,13 @@ import { GrInstagram } from "react-icons/gr";
 import Link from 'next/link';
 import { IoLogoLinkedin } from "react-icons/io";
 import { motion } from 'framer-motion';
-
+import { FaWhatsapp } from "react-icons/fa6";
 const Nav = () => {
   return (
-    <div className="mt-20 bg-gray-800 text-white w-full">
-      <motion.div 
+    <div className="mt-20 bg-gray-800 text-white w-full overflow-hidden">
+      <div 
         className="flex flex-col md:flex-row md:justify-between md:items-center px-6 py-4 gap-4 overflow-hidden"
-        initial={{ x: 0 }}
+      
       >
         {/* Social Icons */}
         <div className="flex space-x-5 justify-center items-center">
@@ -36,7 +36,7 @@ const Nav = () => {
             📞 +92 3160486234
           </Link>
  <Link href="tel:+436506896710" className="hover:underline">
-             +436506896710
+           <FaWhatsapp />  +436506896710
           </Link>
           <Link href="mailto:thecreator234@gmail.com" className="hover:underline">
             📩 thecreatorHub234@gmail.com
@@ -44,7 +44,7 @@ const Nav = () => {
             
           <span>🕛 Open Monday–Friday 24/7</span>
         </div>
-      </motion.div>
+      </div>
     </div>
   )
 }
