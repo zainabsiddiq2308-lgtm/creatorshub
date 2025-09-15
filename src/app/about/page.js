@@ -114,15 +114,13 @@ const About = () => {
             Usama Bin Ahmed
           </h3>
           <p className="text-lg leading-8 text-gray-300">
-            As the visionary leader of <span className="font-semibold">Creator – The Art Company</span>, 
+            As the visionary leader of <span className="font-semibold">Creator Hub</span>, 
           Usama bin Ahmed believes in the power of creativity to transform lives and communities. 
-            With years of experience in art, design, and leadership, she has built a company 
-            that bridges tradition with modern innovation. Her mission is simple – to inspire, 
+            With years of experience in web development, design, and leadership, He has built a company 
+            that bridges tradition with modern innovation. His mission is simple – to inspire, 
             connect, and create meaningful art that leaves a lasting impact. 
           </p>
-          <p className="text-lg leading-8 text-gray-300 mt-4 italic">
-            "Art is not just what we create, it’s what we inspire."
-          </p>
+         
         </motion.div>
       </div>
 

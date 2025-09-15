@@ -48,10 +48,10 @@ const Contact = () => {
             we’ll get back to you as soon as possible.
           </p>
           <ul className="space-y-4 text-gray-300">
-            <li>📧 Email: thecrestor234@gmail.com</li>
-            <li>📞 Phone: +92 300 1234567</li>
+            <li>📧 Email: thecreator234@gmail.com</li>
+            <li>📞 Phone: +92 316</li>
        
-            <li>🌍 Available: Online Worldwide</li>
+            <li>🌍 Available: 24/7 Monday–Friday</li>
           </ul>
         </motion.div>
 

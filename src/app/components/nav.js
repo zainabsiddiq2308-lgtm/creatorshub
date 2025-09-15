@@ -31,12 +31,16 @@ const Nav = () => {
 
         {/* Contact Info */}
         <div className="flex flex-col md:flex-row md:items-center gap-3 text-sm md:text-base text-center md:text-left">
-          <p className="font-semibold">The Creator With Art</p>
+          <p className="font-semibold">The Creators Hub</p>
           <Link href="tel:+923160486234" className="hover:underline">
             📞 +92 3160486234
           </Link>
-          <Link href="mailto:thecreatorwithart234@gmail.com" className="hover:underline">
-            📩 thecreatorwith234@gmail.com
+
+          <Link href="mailto:thecreator234@gmail.com" className="hover:underline">
+            📩 thecreatorHub234@gmail.com
+          </Link>
+            <Link href="tel:+436506896710" className="hover:underline">
+            📞 +436506896710
           </Link>
           <span>🕛 Open Monday–Friday 24/7</span>
         </div>
