@@ -21,7 +21,7 @@ const Nav = () => {
             <IoLogoLinkedin />
           </Link>
           <Link 
-            href="https://www.instagram.com/thecreatorswithart__?igsh=MWF6YnE4OWN6ejY5Mw==" 
+            href="https://www.instagram.com/thecreatorshub____?igsh=MWF6YnE4OWN6ejY5Mw=="
             target="_blank"
             className="text-2xl hover:text-pink-400"
           >
@@ -32,8 +32,8 @@ const Nav = () => {
         {/* Contact Info */}
         <div className="flex flex-col md:flex-row md:items-center gap-3 text-sm md:text-base text-center md:text-left">
           <p className="font-semibold">The Creator With Art</p>
-          <Link href="tel:+923001234567" className="hover:underline">
-            📞 +92 300 1234567
+          <Link href="tel:+923160486234" className="hover:underline">
+            📞 +92 3160486234
           </Link>
           <Link href="mailto:thecreatorwithart234@gmail.com" className="hover:underline">
             📩 thecreatorwith234@gmail.com
