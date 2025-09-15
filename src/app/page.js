@@ -10,6 +10,8 @@ import Sdlc from "./components/sdlc";
 import Testimonial from "./components/testimonial";
 import Contact from "./components/contact";
 import Nav from "./components/nav";
+import Compo2 from "./components/compo2";
+
 
 export default function Home() {
   const [data, setData] = useState(false);
@@ -21,7 +23,8 @@ export default function Home() {
     
 
       <div className=" "><Nav /></div>
-      <Prac />
+      {/* <Prac /> */}
+      <Compo2/>
       <About />
       <Services />
       <Client />
