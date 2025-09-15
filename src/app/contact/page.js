@@ -49,7 +49,7 @@ const Contact = () => {
           </p>
           <ul className="space-y-4 text-gray-300">
             <li>📧 Email: thecreator234@gmail.com</li>
-            <li>📞 Phone: +92 316</li>
+            <li>📞 Phone:  +92 3160486234</li>
        
             <li>🌍 Available: 24/7 Monday–Friday</li>
           </ul>
