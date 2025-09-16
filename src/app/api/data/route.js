@@ -33,7 +33,7 @@ console.log(body)
       from: "Acme <thecreatorwithart234@gmail.com>", // 👈 yahan apna verified sender daalo
       to: ["zainabsiddiq2308@gmail.com"],          // 👈 yahan apna original email daalo
       subject: `📩 New Contact Form Submission from ${name}`,
-        react: EmailTemplate({ name, email, phone, message }), 
+      react: <EmailTemplate name={name} email={email} phone={phone} message={message} />,
     });
 
   
