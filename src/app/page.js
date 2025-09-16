@@ -24,7 +24,7 @@ export default function Home() {
 
       <div className=" "><Nav /></div>
       {/* <Prac /> */}
-      {/* <Compo2/> */}
+      <Compo2/>
       <About />
       <Services />
       <Client />
