@@ -30,8 +30,8 @@ console.log(body)
   try {
     // Email bhejna
     const data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>", // 👈 yahan apna verified sender daalo
-      to: ["thecreator234@gmail.com"],          // 👈 yahan apna original email daalo
+      from: "Acme <contact@thecreatorshub.tech>", // 👈 yahan apna verified sender daalo
+      to: ["zainabsiddiq2308@gmail.com"],          // 👈 yahan apna original email daalo
       subject: `📩 New Contact Form Submission from ${name}`,
       react: EmailTemplate,                  // React component
       reactProps: {                          // Component ko props bhejo

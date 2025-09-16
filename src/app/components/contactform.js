@@ -14,7 +14,7 @@ const ContactForm = () => {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("http://localhost:3000/api/data", {
+      const res = await fetch("thecreatorshub.tech/api/data", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, phone, message }),
