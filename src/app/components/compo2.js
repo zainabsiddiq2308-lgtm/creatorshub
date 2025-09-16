@@ -20,7 +20,8 @@ const Compo2 = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black/60 " />
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col md:flex-row items-center justify-between w-full h-full px-6 md:px-12">
+      <div className="relative z-20 flex flex-col md:flex-row 
+      overflow-hidden items-center justify-between w-full h-full px-6 md:px-12">
         {/* Left Content */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-white text-3xl md:text-5xl font-bold mt-20">
