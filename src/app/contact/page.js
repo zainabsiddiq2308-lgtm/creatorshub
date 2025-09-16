@@ -65,7 +65,7 @@ const Contact = () => {
           <h2 className="text-3xl font-semibold mb-8 text-center">
             Send Us a Message
           </h2>
-          {/* component use kia hai */}
+          {/* component use kia haiv */}
           <div><ContactForm/></div>
         </motion.div>
       </div>

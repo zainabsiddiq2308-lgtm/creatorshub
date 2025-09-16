@@ -8,13 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* 1: Company Info */}
         <div className="space-y-4">
-          <Image
-            src="/assets/logo.png"
-            alt="logo"
-            width={120}
-            height={120}
-            className="object-contain"
-          />
+         <Image src='/assets/Logo.png' width={80} height={40} alt='Logo' />
           <p className="text-gray-400 leading-6">
             Creator of the Art is a technology and design company that
             transforms ideas into impactful digital solutions. We blend

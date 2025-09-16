@@ -18,7 +18,7 @@ export async function POST(req) {
 
     const data = await resend.emails.send({
       from: "Creators Hub <onboarding@resend.dev>", // 👈 yahan verified sender use karo
-      to: ["zainabsiddiq2308@gmail.com"],
+      to: ["thecreatorwithart234@gmail.com"],
       subject: `📩 New Contact Form Submission from ${name}`,
       react: <EmailTemplate name={name} email={email} phone={phone} message={message} />,
     });

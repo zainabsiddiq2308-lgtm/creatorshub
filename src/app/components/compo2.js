@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 const Compo2 = () => {
   const route=useRouter()
   return (
-    <div className="relative w-screen h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden">
       {/* Background Video */}
       <video
         src="/assets/videobg.mp4"
