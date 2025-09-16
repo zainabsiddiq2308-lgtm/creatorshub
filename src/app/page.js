@@ -22,9 +22,9 @@ export default function Home() {
     <div className="flex flex-col relative">
     
 
-      {/* <div className=" "><Nav /></div> */}
+      <div className=" "><Nav /></div>
       {/* <Prac /> */}
-      <Compo2/>
+      {/* <Compo2/> */}
       <About />
       <Services />
       <Client />
