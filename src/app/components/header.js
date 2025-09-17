@@ -32,11 +32,11 @@ const Header = () => {
 
   return (
     <div className='fixed w-full bg-gray-950 shadow-md z-50'>
-      <div className="flex h-20 px-6 md:px-12 items-center justify-between">
+      <div className="flex h-20 px-6 md:px-2 items-center justify-between">
         
         {/* Logo */}
         <div>
-          <Image src='/assets/Logo.png' width={80} height={40} alt='Logo' />
+          <Image src='/assets/Logo.png' width={120} height={100} alt='Logo' />
         </div>
 
         {/* Desktop Navbar */}

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="space-y-4">
          <Image src='/assets/Logo.png' width={80} height={40} alt='Logo' />
           <p className="text-gray-400 leading-6">
-            Creator of the Art is a technology and design company that
+            Creator Hub is a technology and design company that
             transforms ideas into impactful digital solutions. We blend
             creativity with innovation to deliver scalable, reliable, and
             user-focused products.
@@ -117,7 +117,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} Creator of the Art. All rights reserved.
+        © {new Date().getFullYear()} Creator Hub. All rights reserved.
       </div>
     </footer>
   );

@@ -36,7 +36,7 @@ const Nav = () => {
           </Link>
 
           <Link
-            href="tel:+436506896710"
+         href="https://wa.me/+436506896710"
             className="flex items-center justify-center gap-1 hover:underline"
           >
             <FaWhatsapp className="text-green-400 text-lg" /> +43 6506896710
