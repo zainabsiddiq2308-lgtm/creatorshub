@@ -60,8 +60,8 @@ const  Contact=() => {
   <div className='text-xl'><FaWhatsapp /></div>
 <Link href="https://wa.me/+436506896710">+436506896710</Link>
 </div>
-<div className='flex items-center'><Link href="mailto: infothecreatorshub.tech" 
-className='underline font-bold'>infothecreatorshub.tech</Link></div>
+<div className='flex items-center'><Link href="mailto: info@thecreatorshub.tech" 
+className='underline font-bold'>info@thecreatorshub.tech</Link></div>
 </div>
 
 {/* new */}
