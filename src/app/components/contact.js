@@ -61,7 +61,7 @@ const  Contact=() => {
 <Link href="https://wa.me/+436506896710">+436506896710</Link>
 </div>
 <div className='flex items-center'><Link href="mailto:thecreators234@gmail.com" 
-className='underline font-bold'>thecreators234@gmail.com</Link></div>
+className='underline font-bold'>infothecreatorshub.tech</Link></div>
 </div>
 
 {/* new */}
