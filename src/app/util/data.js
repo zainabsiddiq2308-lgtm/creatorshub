@@ -75,8 +75,8 @@ export const data1=[
         path:"/customsoftware",
         description:"Custom software development creates tailored  solutions designed to meet specific business needs with efficiency and scalability."
     },
-      { img:"/assets/custom.png",
-        name:" Quality Asuurance ",
+      { img:"/assets/quality.png",
+        name:" Quality Assurance ",
         path:"/qualityassurance",
         description:"Quality assurance ensures products and software meet the highest standards of performance, reliability, and user satisfaction."
     },

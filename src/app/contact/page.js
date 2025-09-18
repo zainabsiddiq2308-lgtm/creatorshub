@@ -48,7 +48,7 @@ const Contact = () => {
             we’ll get back to you as soon as possible.
           </p>
           <ul className="space-y-4 text-gray-300">
-            <li>📧 Email: thecreatorwithart234@gmail.com</li>
+            <li>📧 Email: info@thecreatorshub.tech</li>
             <li>📞 Phone:  +92 3160486234</li>
        
             <li>🌍 Available: 24/7 Monday–Friday</li>
