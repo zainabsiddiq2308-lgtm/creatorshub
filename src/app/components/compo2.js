@@ -3,7 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 const Compo2 = () => {
-  const route=useRouter()
+  const router = useRouter(); // use conventional name
+
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Video */}
@@ -17,11 +18,12 @@ const Compo2 = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/60 " />
+      <div className="absolute top-0 left-0 w-full h-full bg-black/60" />
 
       {/* Content */}
       <div className="relative z-20 flex flex-col md:flex-row 
-      overflow-hidden items-center justify-between w-full h-full px-6 md:px-12">
+        overflow-hidden items-center justify-between w-full h-full px-6 md:px-12">
+
         {/* Left Content */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-white text-3xl md:text-5xl font-bold mt-20">
@@ -36,12 +38,17 @@ const Compo2 = () => {
 
           {/* Buttons */}
           <div className="flex gap-4 mt-6 justify-center md:justify-start">
-            <button className="rounded-md px-6 py-3 bg-yellow-500 text-black font-medium hover:bg-yellow-400 transition"
-            onClick={(()=>(route.push("/contact")))}>
+            <button
+              className="rounded-md px-6 py-3 bg-yellow-500 text-black font-medium hover:bg-yellow-400 transition"
+              onClick={() => router.push("/contact")} // simplified
+            >
               Get Started
             </button>
-            <button className="border-2 border-amber-500 px-6 py-3 rounded-full text-white
-             hover:bg-amber-500 hover:text-black transition"  onClick={(()=>(route.push("/services")))}>
+            <button
+              className="border-2 border-amber-500 px-6 py-3 rounded-full text-white
+                hover:bg-amber-500 hover:text-black transition"
+              onClick={() => router.push("/services")} // simplified
+            >
               Learn More
             </button>
           </div>

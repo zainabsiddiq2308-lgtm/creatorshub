@@ -1,35 +1,15 @@
-"use client";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+// Is file mein "use client" NAHI hona chahiye
+import Homepage from "./components/homepage";
 
-import Prac from "./components/prac";
-import About from "./components/about";
-import Services from "./components/serivices";
-import Client from "./components/client";
-import Sdlc from "./components/sdlc";
-import Testimonial from "./components/testimonial";
-import Contact from "./components/contact";
-import Nav from "./components/nav";
-import Compo2 from "./components/compo2";
-
+export const metadata = {
+  title: 'The Creators Hub | Innovative IT Solutions, Software & Web Development',
+  description: 'Ready to elevate your business? The Creators Hub delivers custom software, mobile apps, web development, and digital transformation services to help your business grow faster.',
+};
 
 export default function Home() {
-  const [data, setData] = useState(false);
-
- 
-
   return (
-    <div className="flex flex-col relative">
-    hello
-
-   
-      <Compo2/>
-      <About />
-      <Services />
-      <Client />
-      <Sdlc />
-      <Testimonial />
-      <Contact />
-    </div>
+    <main>
+      <Homepage />
+    </main>
   );
 }

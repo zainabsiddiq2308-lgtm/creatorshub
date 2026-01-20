@@ -5,7 +5,9 @@ import { data, data1 } from '../util/data'
 import { IoMenuSharp } from "react-icons/io5";
 import { MdClose } from "react-icons/md";
 import { useRouter } from 'next/navigation'
+
 import Link from 'next/link'
+
 
 const Header = () => {
   const router = useRouter()
@@ -71,13 +73,10 @@ const Header = () => {
 
         {/* Right section */}
         <div className="hidden lg:flex">
-          <button
-            className="bg-yellow-500 rounded-xl
-             px-7 py-2 border-2 border-gray-400 text-black font-bold hover:bg-yellow-400 transition-all"
-            onClick={() => router.push("/contact")}
-          >
-            Contact us
-          </button>
+            <button className="rounded-md px-6 py-3 bg-yellow-500 text-black font-medium hover:bg-yellow-400 transition"
+            onClick={(()=>(router.push("/contact")))}>
+              Contact us
+            </button>
         </div>
 
         {/* Mobile Menu Button */}

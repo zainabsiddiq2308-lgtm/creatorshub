@@ -111,13 +111,13 @@ const About = () => {
         >
           <h2 className="text-4xl font-semibold mb-4">Meet Our CEO</h2>
           <h3 className="text-2xl font-bold text-pink-500 mb-4">
-            Usama Bin Ahmed
+          Zainab Siddiq
           </h3>
           <p className="text-lg leading-8 text-gray-300">
             As the visionary leader of <span className="font-semibold">Creator Hub</span>, 
-          Usama bin Ahmed believes in the power of creativity to transform lives and communities. 
-            With years of experience in web development, design, and leadership, He has built a company 
-            that bridges tradition with modern innovation. His mission is simple – to inspire, 
+          Zainab Siddiq believes in the power of creativity to transform lives and communities. 
+            With years of experience in web development, design, and leadership, She has built a company 
+            that bridges tradition with modern innovation. Her mission is simple – to inspire, 
             connect, and create meaningful art that leaves a lasting impact. 
           </p>
          

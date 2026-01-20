@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+
 const About = () => {
   const abc=useRouter(null);
   return (
@@ -32,9 +33,10 @@ const About = () => {
             With a passion for design and development, we make sure every
             project we work on brings value to our clients and their customers.
           </p>
-          <button className='border-2 border-amber-500 bg-blue-950
-           text-white px-7 pt-3 pb-3 rounded-3xl '  
-      id='btn' onClick={(()=>(abc.push("/about")))}>Learn more</button>
+          <button className="rounded-md px-6 py-3 bg-yellow-500 text-black font-medium hover:bg-yellow-400 transition"
+            onClick={(()=>(abc.push("/about")))}>
+              Get Started
+            </button>
         </div>
       </div>
     </section>
